@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hammer Strength Test Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Hammer Strength Test</h1>
+    <div class="meter-container">
+      <img src="strength_meter_bg.png" alt="Strength Meter" class="meter-bg">
+      <canvas id="needleCanvas" width="320" height="180"></canvas>
+      <img src="hammer.png" alt="Hammer" class="hammer-img">
+    </div>
+    <div class="score-section">
+      <div id="scoreDisplay"></div>
+      <div id="turnDisplay"></div>
+      <div id="winnerDisplay"></div>
+    </div>
+    <div class="controls">
+      <button id="startBtn">Start Game</button>
+      <button id="stopBtn" disabled>Stop Needle</button>
+      <button id="restartBtn" style="display:none;">Restart</button>
+      <button id="modeBtn">Switch to 2-Player</button>
+    </div>
+    <div class="instructions">
+      <p>Press <b>Stop Needle</b> or <b>Spacebar</b> to stop the needle.<br>
+      Try to stop as close to 90° as possible!</p>
+      <p>In 2-Player mode: Player 1 uses <b>Spacebar</b>, Player 2 uses <b>Enter</b>.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
